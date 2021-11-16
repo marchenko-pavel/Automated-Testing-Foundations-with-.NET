@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Development_and_build_tools": {
+      "commandName": "Project",
+      "commandLineArgs": "Hello from API Hello from API Hello from API "
+    }
+  }
+}
