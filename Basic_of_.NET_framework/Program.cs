@@ -32,7 +32,8 @@ namespace Epam.Basic.NETframework
                 ResultNumber += (StackResults.Pop().ToString()) + "_";
             }
 
-            Console.WriteLine($"Преобразовано число {arg_num[0]} из десятичной системы исчисления в число {ResultNumber} системы исчисления - {arg_num[1]}");
+            Console.WriteLine($"Преобразовано число {arg_num[0]} из десятичной " +
+                $"системы исчисления в число {ResultNumber} системы исчисления - {arg_num[1]}");
         }
     }
 }
