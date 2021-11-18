@@ -1,12 +1,11 @@
-﻿using System;
-
-namespace Interfaces_and_abstract_classes
+﻿
+namespace Epam.Interface
 {
     internal interface IFlyable
     {
         double FlyTo();
         int GetFlyTime();
-        void Fly_Run(int time_fly);
-        void view_coordinete();                
+        void FlyRun(int time_fly);
+        void ViewCoordinete();                
     }
 }

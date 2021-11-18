@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Bird.cs" />
     <Compile Include="Drone.cs" />
+    <Compile Include="FlyObject.cs" />
     <Compile Include="Plan.cs" />
     <Compile Include="Interface_IFiyable.cs" />
     <Compile Include="Program.cs" />
