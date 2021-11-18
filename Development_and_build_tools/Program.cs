@@ -1,6 +1,7 @@
 ﻿using System;
 
-class Development_and_build_tools
+namespace Epam.Developmentand.Tools;
+class SetOfString
 {
     static void Main(string[] args)
     {
