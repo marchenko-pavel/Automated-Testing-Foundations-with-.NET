@@ -1,41 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Basic_of_.NET_framework
+namespace Epam.Basic.NETframework
 {
-    internal class Program
+    internal class DecimalNumberSystemToAnother
     {
         static void Main(string[] arg_num)
         {
-            Stack<int> stack = new Stack<int>();
-            
-            int buf_num = Int32.Parse(arg_num[0]);
-            int buf_base = Int32.Parse(arg_num[1]);
+            int ArgumentNumber = Int32.Parse(arg_num[0]);
+            int ArgumentBase = Int32.Parse(arg_num[1]);
+            string ResultNumber = "";
+            Stack<int> StackResults = new Stack<int>();                   
 
-            for(; ; )
+            for(;;)
             {
-                if (buf_num >= buf_base)
+                if (ArgumentNumber >= ArgumentBase)
                 {
-                    stack.Push(buf_num % buf_base);
-                    buf_num /= buf_base;
+                    StackResults.Push(ArgumentNumber % ArgumentBase);
+                    ArgumentNumber /= ArgumentBase;
                 }
                 else
                 {
-                    stack.Push((int)buf_num);
+                    StackResults.Push((int)ArgumentNumber);
                     break;
                 }
-            }
+            }            
 
-            string result = "";
-
-            for(int i = stack.Count(); i > 0; --i)
+            for(int i = StackResults.Count(); i > 0; --i)
             {
-                result += (stack.Pop().ToString()) + "_";
+                ResultNumber += (StackResults.Pop().ToString()) + "_";
             }
-            Console.WriteLine($"Преобразовано число {arg_num[0]} из десятичной системы исчисления в число {result} системы исчисления - {arg_num[1]}");
+
+            Console.WriteLine($"Преобразовано число {arg_num[0]} из десятичной системы исчисления в число {ResultNumber} системы исчисления - {arg_num[1]}");
         }
     }
 }
