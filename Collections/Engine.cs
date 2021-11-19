@@ -3,10 +3,10 @@ namespace Epam.Collections
 {
     public class Engine
     {
-        protected int Power;
-        protected double Volume;
-        protected string Type;
-        protected string SerialNumber;
+        public int Power;
+        public double Volume;
+        public string Type;
+        public string SerialNumber;
 
         public Engine(int Power, double Volume, string Type, string SerialNumber)
         {

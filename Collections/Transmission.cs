@@ -3,9 +3,9 @@ namespace Epam.Collections
 {
     public class Transmission
     {
-        protected string Type;
-        protected int GearNumber;
-        protected string Vendor;
+        public string Type;
+        public int GearNumber;
+        public string Vendor;
 
         public Transmission(string Type, int GearNumber, string Vendor)
         {

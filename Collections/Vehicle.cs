@@ -3,12 +3,14 @@ namespace Epam.Collections
 {
     public class Vehicle
     {
-        protected Engine Engine;
-        protected Chassis Chassis;
-        protected Transmission Transmission;
+        public string name;
+        public Engine Engine;
+        public Chassis Chassis;
+        public Transmission Transmission;
 
-        public Vehicle(Engine Engine, Chassis Chassis, Transmission Transmission)
+        public Vehicle(string name, Engine Engine, Chassis Chassis, Transmission Transmission)
         {
+            this.name = name;
             this.Engine = Engine;
             this.Chassis = Chassis;
             this.Transmission = Transmission;

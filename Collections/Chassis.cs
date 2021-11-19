@@ -3,8 +3,8 @@ namespace Epam.Collections
 {
     public class Chassis
     {
-        protected int Wheels;
-        protected int Workload;
+        public int Wheels;
+        public int Workload;
 
         public Chassis(int Wheels, int Workload)
         {

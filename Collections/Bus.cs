@@ -3,7 +3,7 @@ namespace Epam.Collections
 {
     public class Bus : Vehicle
     {
-        public Bus(Engine engine, Chassis chassis, Transmission transmission) : base(engine, chassis, transmission)
+        public Bus(string name, Engine engine, Chassis chassis, Transmission transmission) : base(name, engine, chassis, transmission)
         {
         }
         public override void PrintInfo()
